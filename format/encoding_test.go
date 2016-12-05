@@ -3,7 +3,6 @@ package format
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
 	"testing"
 )
 

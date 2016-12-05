@@ -2,10 +2,10 @@ package main
 
 import "testing"
 
-const URL = "http://hiring-tests.s3-website-eu-west-1.amazonaws.com/2015_Developer_Scrape/5_products.html"
 
 func TestGetProducts(t *testing.T) {
-	products, total := getProducts(URL)
+	var url = "http://hiring-tests.s3-website-eu-west-1.amazonaws.com/2015_Developer_Scrape/5_products.html"
+	products, total := getProducts(url)
 
 	if total == 0 {
 		t.Error("Total is 0")
